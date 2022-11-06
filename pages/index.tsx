@@ -10,12 +10,13 @@ import Card from '../components/card/Card'
 export default function Home() {
   return (
     <Layout title={'Home'}>
-      <section className='flex flex-col w-full'>
-        <div className='columns-2 flex flex-col md:flex-row justify-around items-center w-full text-center md:text-left'>
+      <section className='flex flex-col w-full relative backdrop-blur-lg'>
+        <div className='z-[-10]' style={{ backgroundImage: `url(${'/assets/images/bg-half.svg'})`, backgroundRepeat: 'no-repeat', transform: 'rotate(270deg)', width: '80vw', height: '80vw', position: 'absolute', top: 0, left: 0 }}></div>
+        <div className='columns-2 flex flex-col md:flex-row justify-around items-center w-full text-center md:text-left backdrop-blur-sm'>
           <div className='w-6/12 pt-[10%] md:pt-0 flex flex-col items-center justify-center'>
-            <h1 className='font-black text-3xl'>Hello My Name is Joe</h1>
+            <h1 className='text-stone-700 font-black text-5xl'>Hello My Name is Joe</h1>
             <br />
-            <h3 className='font-semibold text-2xl pb-4'>and I&#39;m a Fullstack Developer</h3>
+            <h3 className='text-stone-700 font-semibold text-3xl pb-4'>and I&#39;m a Fullstack Developer</h3>
             <div className='flex  max-[1160px]:flex-col flex-row items-center justify-center pb-4'>
               <AppButton size={'XL'} label={'Contact Me'} clickHandler={function (): {} {}} color={'PRIMARY'} style={{ margin: '5px' }} />
               <a href='#important'>
@@ -37,9 +38,9 @@ export default function Home() {
           )
         })}
       </section>
-      <section className='w-content-fit flex flex-col items-center justify-center m-5'>
+      <section className='w-content-fit flex flex-col items-center justify-center m-5 backdrop-blur-sm '>
         <h2 className='text-xl font-bold mb-5'>Frontend & Backend Technologies</h2>
-        <div className='flex flex-col md:flex-row items-center justify-center rounded-xl shadow-xl p-4'>
+        <div className='flex flex-col md:flex-row items-center justify-center rounded-xl shadow-xl p-4 opacity-90 bg-white'>
           <img className='hover:scale-125 duration-700 m-2' src='https://www.pngitem.com/pimgs/m/1-15848_node-js-node-js-hd-png-download.png' alt='node js' width='75px' height='75px' />
           <img className='hover:scale-125 duration-700 m-2' src='https://coder.clothing/images/stories/virtuemart/product/reactjs-logo-sticker.jpg' alt='react' width='75px' height='75px' />
           <img className='hover:scale-125 duration-700 m-2' src='https://cdn.zapier.com/storage/blog/4ec8fc7dc3a75758a3913bab9e5a4fd8_2.500x278.png' alt='redux' width='75px' height='75px' />
@@ -57,9 +58,9 @@ export default function Home() {
           <img className='hover:scale-125 duration-700 m-2' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png' alt='dotnet' width='75px' height='75px' />
         </div>
       </section>
-      <section className='w-full flex flex-col items-center justify-center m-5 '>
+      <section className='w-full flex flex-col items-center justify-center m-5 backdrop-blur-sm'>
         <h2 className='text-xl font-bold mb-5'>Frontend Styling Framworks</h2>
-        <div className='flex flex-col md:flex-row items-center justify-center rounded-xl shadow-xl p-4'>
+        <div className='flex flex-col md:flex-row items-center justify-center rounded-xl shadow-xl p-4 opacity-90 bg-white '>
           <img className='hover:scale-125 duration-700 m-2' src='https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png' alt='node js' width='75px' height='75px' />
           <img className='hover:scale-125 duration-700 m-2' src='https://lh3.googleusercontent.com/WgTVt2TUmCDrJuhBVQi84ynGogOcDzzAwKrR4IUxObCoNd-VAVeRph3gQtlUEgYq2yj9OgwtsGw0ylIwigC66jHmy1I0oxJ3GbNaS1criuH6-ohZ39dnwLOdhAzYuqaR1OX5ln7n' alt='react' width='75px' height='75px' />
           <img className='hover:scale-125 duration-700 m-2' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk03fpMxbjzvgaDz2z3gu5G-9UeqgnNfUdd7gzSo9-er843XxKIG3g46lO1GRUF-L9UWs&usqp=CAU' alt='node js' width='75px' height='75px' />

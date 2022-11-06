@@ -17,7 +17,7 @@ const Layout = ({ children, title }: any) => {
         <Navigation />
       </header>
       <main className={styles.appHeight}>{children}</main>
-      <footer>
+      <footer className='relative'>
         <Footer />
       </footer>
     </div>
