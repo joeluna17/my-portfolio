@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card = ({ title, text, image }: CardProps) => {
   return (
-    <div className='w-8/12 flex flex-col md:flex-row columns-2 rounded-lg min-h-[300px] shadow-lg backdrop-blur-sm '>
+    <div className='w-11/12 md:w-8/12 flex flex-col md:flex-row columns-2 rounded-lg min-h-[300px] shadow-lg backdrop-blur-sm '>
       <div className={`flex flex-col justify-center  rounded-lg ${image ? 'w-full md:w-6/12' : 'w-full'} p-8 bg-white opacity-60 `}>
         <h3 className='text-[22px] font-bold mb-3'>{title}</h3>
         <p>{text}</p>
